@@ -1,0 +1,31 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+<h2>Admin Dashboard</h2>
+
+<h4>Users</h4>
+
+{% for u in users %}
+
+<p>{{u.username}} - {{u.email}}</p>
+
+{% endfor %}
+
+<h4>Products</h4>
+
+{% for p in products %}
+
+<p>{{p.name}} - ₹{{p.price}}</p>
+
+{% endfor %}
+
+<h4>Orders</h4>
+
+{% for o in orders %}
+
+<p>Order {{o.id}} - ₹{{o.amount}}</p>
+
+{% endfor %}
+
+{% endblock %}

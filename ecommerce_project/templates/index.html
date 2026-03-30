@@ -1,0 +1,45 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+<h3 class="page-title">Explore Our Products</h3>
+
+<div class="row">
+
+{% for p in products %}
+
+<div class="col-md-4 mb-4">
+
+<div class="card product-card">
+
+<img src="{{ url_for('static', filename='images/' + p.image) }}" class="product-img">
+
+<div class="card-body text-center">
+
+<h5 class="product-title">
+{{ p.brand }} {{ p.name }}
+</h5>
+
+<p class="product-desc">
+{{ p.description }}
+</p>
+
+<h6 class="product-price">
+₹{{ p.price }}
+</h6>
+
+<a href="/add/{{ p.id }}" class="btn btn-primary add-btn">
+Add to Cart
+</a>
+
+</div>
+
+</div>
+
+</div>
+
+{% endfor %}
+
+</div>
+
+{% endblock %}

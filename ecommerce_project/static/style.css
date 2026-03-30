@@ -1,0 +1,250 @@
+/* ---------- GLOBAL ANIMATED BACKGROUND ---------- */
+
+body{
+margin:0;
+font-family:'Segoe UI', sans-serif;
+
+background:linear-gradient(270deg,#1f1c2c,#928dab,#1f1c2c);
+background-size:600% 600%;
+
+animation:gradientBG 12s ease infinite;
+
+min-height:100vh;
+overflow-x:hidden;
+}
+
+/* Gradient animation */
+
+@keyframes gradientBG{
+
+0%{background-position:0% 50%;}
+50%{background-position:100% 50%;}
+100%{background-position:0% 50%;}
+
+}
+
+/* ---------- FLOATING GLOW EFFECT ---------- */
+
+body::before,
+body::after{
+
+content:"";
+position:fixed;
+
+width:400px;
+height:400px;
+
+background:rgba(255,255,255,0.12);
+
+border-radius:50%;
+filter:blur(150px);
+
+z-index:-1;
+
+}
+
+body::before{
+top:-150px;
+left:-150px;
+}
+
+body::after{
+bottom:-150px;
+right:-150px;
+}
+
+/* ---------- NAVBAR ---------- */
+
+.navbar{
+
+background:rgba(0,0,0,0.6);
+backdrop-filter:blur(12px);
+
+box-shadow:0 5px 20px rgba(0,0,0,0.5);
+
+padding:12px;
+
+}
+
+.navbar-brand{
+
+font-weight:bold;
+font-size:24px;
+letter-spacing:1px;
+
+}
+
+/* ---------- PAGE TITLE ---------- */
+
+.page-title{
+
+text-align:center;
+color:white;
+font-weight:bold;
+font-size:32px;
+margin-bottom:40px;
+
+}
+
+/* ---------- PRODUCT GRID ---------- */
+
+.row{
+
+margin-top:20px;
+
+}
+
+/* ---------- PRODUCT CARDS ---------- */
+
+.product-card{
+
+background:rgba(255,255,255,0.15);
+backdrop-filter:blur(15px);
+
+border-radius:20px;
+border:none;
+
+color:white;
+
+transition:0.4s;
+
+box-shadow:0 10px 25px rgba(0,0,0,0.3);
+
+overflow:hidden;
+
+}
+
+/* Hover animation */
+
+.product-card:hover{
+
+transform:translateY(-12px) scale(1.05);
+
+box-shadow:0 25px 50px rgba(0,0,0,0.6);
+
+}
+
+/* ---------- PRODUCT IMAGE ---------- */
+
+.product-img{
+
+width:100%;
+height:220px;
+
+object-fit:contain;
+
+padding:20px;
+
+transition:0.6s;
+
+}
+
+/* Zoom animation */
+
+.product-card:hover .product-img{
+
+transform:scale(1.12);
+
+}
+
+/* ---------- PRODUCT TEXT ---------- */
+
+.product-title{
+
+font-size:18px;
+font-weight:600;
+
+}
+
+.product-desc{
+
+font-size:14px;
+color:#f2f2f2;
+min-height:40px;
+
+}
+
+/* ---------- PRICE ---------- */
+
+.product-price{
+
+font-size:20px;
+font-weight:bold;
+color:#00ffcc;
+margin-bottom:10px;
+
+}
+
+/* ---------- BUTTON ---------- */
+
+.add-btn{
+
+border-radius:30px;
+
+background:linear-gradient(45deg,#00c6ff,#0072ff);
+border:none;
+
+padding:10px 22px;
+
+transition:0.3s;
+
+}
+
+.add-btn:hover{
+
+background:linear-gradient(45deg,#0072ff,#00c6ff);
+
+transform:scale(1.08);
+
+}
+
+/* ---------- LOGIN PAGE ---------- */
+
+.login-body{
+
+display:flex;
+justify-content:center;
+align-items:center;
+
+height:100vh;
+
+}
+
+.login-container{
+
+background:rgba(255,255,255,0.15);
+backdrop-filter:blur(15px);
+
+padding:40px;
+
+border-radius:20px;
+
+color:white;
+
+box-shadow:0 15px 35px rgba(0,0,0,0.5);
+
+width:350px;
+
+}
+
+/* ---------- TABLE ---------- */
+
+table{
+
+background:white;
+border-radius:10px;
+
+overflow:hidden;
+
+box-shadow:0 5px 15px rgba(0,0,0,0.3);
+
+}
+
+/* ---------- CART TOTAL ---------- */
+
+h4{
+
+color:white;
+font-weight:bold;
+
+}
