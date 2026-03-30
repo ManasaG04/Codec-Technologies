@@ -1,0 +1,67 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    display: flex;
+    height: 100vh;
+}
+
+.sidebar {
+    width: 25%;
+    background: #0d1b2a;
+    color: white;
+    padding: 20px;
+}
+
+.sidebar button {
+    width: 100%;
+    padding: 10px;
+    margin: 8px 0;
+    background: #1e90ff;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.queries {
+    margin-top: 20px;
+    font-size: 14px;
+}
+
+.chat-area {
+    width: 75%;
+    display: flex;
+    flex-direction: column;
+}
+
+.header {
+    background: #1e90ff;
+    color: white;
+    padding: 15px;
+    font-size: 18px;
+}
+
+.chat-box {
+    flex: 1;
+    padding: 20px;
+    overflow-y: auto;
+}
+
+.input-area {
+    display: flex;
+    padding: 10px;
+}
+
+.input-area input {
+    flex: 1;
+    padding: 10px;
+}
+
+.input-area button {
+    padding: 10px 20px;
+    background: #1e90ff;
+    color: white;
+    border: none;
+}
