@@ -1,0 +1,25 @@
+{% extends "base.html" %}
+{% block content %}
+
+<div class="page">
+
+<div class="image-box">
+<img src="/static/images/login.png">
+</div>
+
+<div class="form-box">
+<h2>Login</h2>
+
+<form method="POST">
+<input name="email" placeholder="Email" required>
+<input type="password" name="password" placeholder="Password" required>
+<button>Login</button>
+</form>
+
+<a href="/register">Register</a>
+<a href="/forgot">Forgot Password?</a>
+</div>
+
+</div>
+
+{% endblock %}

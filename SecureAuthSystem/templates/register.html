@@ -1,0 +1,25 @@
+{% extends "base.html" %}
+{% block content %}
+
+<div class="page">
+
+<div class="image-box">
+<img src="/static/images/twofa.png">
+</div>
+
+<div class="form-box">
+<h2>Create Account</h2>
+
+<form method="POST">
+<input name="username" placeholder="Username" required>
+<input name="email" placeholder="Email" required>
+<input type="password" name="password" placeholder="Password" required>
+<button>Register</button>
+</form>
+
+<a href="/login">Already have account?</a>
+</div>
+
+</div>
+
+{% endblock %}
